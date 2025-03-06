@@ -13,55 +13,94 @@
 }
 
 .menu {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  margin: auto;
+  text-align: center;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+.menu a span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: #1d4ed8;
+  transition: all 0.3s ease;
+}
+
+.menu a span:hover::after {
+  width: 80%;
+}
+
+.menu a span {
+  position: relative;
 }
 
 .menu a {
   color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
 
-.menu a:hover {
-  color: #a855f7;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .menuBtn {
-  font-size: 30px;
-  cursor: pointer;
-  background: transparent;
-  color: white;
-  padding-right: 1rem;
-  border-radius: 5px;
   display: none;
-  border: none;
-  z-index: 100;
 }
 .webLogo {
+  width: 25%;
   padding-top: 1rem;
-  width: 80%;
   display: flex;
   align-items: center;
 }
 .webLogo img {
-  width: 45%;
+  width: 80%;
 }
 
-.menuSwitch {
-  width: 20%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding-right: 2%;
-}
+@media (max-width: 1060px) {
+  .menuBtn {
+    font-size: 30px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    padding-right: 1rem;
+    border-radius: 5px;
+    display: block;
+    border: none;
+    z-index: 100;
+  }
 
-@media (max-width: 900px) {
   .menu {
     display: none;
   }
+  .webLogo {
+    padding-top: 1rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .webLogo img {
+    width: 30%;
+  }
 
-  .menuBtn {
-    display: block;
+  .menuSwitch {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2%;
+  }
+}
+
+@media (max-width: 900px) {
+  .webLogo img {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .webLogo img {
+    width: 50%;
   }
 }

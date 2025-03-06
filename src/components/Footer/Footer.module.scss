@@ -8,6 +8,12 @@
   justify-items: center;
 }
 
+.cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
 .webLogo {
   width: 100%;
   display: grid;
@@ -16,12 +22,12 @@
 }
 
 .webLogo img {
-  width: 60%;
+  width: 50%;
   margin-bottom: 0;
 }
 
 .webLogo h5 {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin-top: 0;
   color: rgba(255, 255, 255, 0.69);
 }
@@ -47,10 +53,6 @@
 
 .socials img:hover {
   transform: scale(1.1);
-}
-
-.nav {
-  margin-top: 1rem;
 }
 
 .nav,
@@ -95,4 +97,27 @@
 .copy p {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.581);
+}
+
+@media (max-width: 900px) {
+  .webLogo img {
+    width: 60%;
+    margin-bottom: 0;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .webLogo h5 {
+    font-size: 1.2rem;
+  }
+  .nav {
+    margin-top: 1rem;
+  }
+  .cont {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
 }

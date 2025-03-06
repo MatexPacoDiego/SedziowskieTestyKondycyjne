@@ -49,3 +49,20 @@
   width: 100%;
   text-align: right;
 }
+
+@media (min-width: 700px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 30%;
+  }
+  .blur {
+    position: absolute;
+    box-shadow: 300px -20px 100px 40px #1d4ed8;
+    z-index: 20;
+  }
+}
