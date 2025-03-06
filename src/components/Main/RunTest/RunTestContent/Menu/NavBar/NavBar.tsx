@@ -1,4 +1,4 @@
-import styles from "./Navbar.module.scss";
+import styles from "./NavBar.module.scss";
 import logo from "../../../../../../assets/logo/logo.svg";
 import { Link } from "react-router-dom";
 
