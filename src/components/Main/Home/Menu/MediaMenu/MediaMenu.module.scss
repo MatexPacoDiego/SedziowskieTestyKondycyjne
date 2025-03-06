@@ -1,0 +1,96 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background: #323232a2;
+  background-color: #18181b79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 22;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menuShow {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menuContent {
+  border: 2px solid #1d4fd87a;
+  background: #18181b;
+  // backdrop-filter: blur(60px);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+}
+.menuContent span {
+  display: flex;
+  justify-content: left;
+}
+
+.menuContent ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.menuContent ul li {
+  margin: 15px 0;
+}
+
+.menuContent ul li a {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menuContent ul li a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: #1d4ed8;
+  transition: all 0.3s ease;
+}
+
+.menuContent ul li a:hover::after {
+  width: 80%;
+}
+.blur {
+  position: absolute;
+  box-shadow: 30px 100px 150px 40px #1d4ed8;
+  z-index: 0;
+}
+
+.blur:last-child {
+  box-shadow: 80px 80px 150px 40px #1d4ed8;
+}
+
+.btnClose button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.btnClose button:hover {
+  color: #1d4fd8;
+  transform: scale(1.2);
+}
+.btnClose {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}

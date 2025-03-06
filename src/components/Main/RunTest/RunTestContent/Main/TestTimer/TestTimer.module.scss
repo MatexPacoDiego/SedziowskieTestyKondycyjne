@@ -1,0 +1,71 @@
+.container {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+.blur {
+  position: absolute;
+  box-shadow: 0 80px 100px 40px #1d4ed8;
+  z-index: 20;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 21;
+}
+
+.container h2 {
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.container h2 span {
+  position: relative;
+}
+.container h2 span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #1d4ed8;
+}
+
+.timer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.timer button {
+  margin: auto;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.openBtn {
+  background-color: #1d4ed8;
+}
+
+.closeBtn {
+  background-color: #32323269;
+}
+
+.meter {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  font-weight: 600;
+}

@@ -1,0 +1,67 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 10%;
+  border-radius: 15px;
+  backdrop-filter: blur(60px);
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  z-index: 23;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #a855f7;
+}
+
+.menuBtn {
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  padding-right: 1rem;
+  border-radius: 5px;
+  display: none;
+  border: none;
+  z-index: 100;
+}
+.webLogo {
+  padding-top: 1rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.webLogo img {
+  width: 45%;
+}
+
+.menuSwitch {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 2%;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+}

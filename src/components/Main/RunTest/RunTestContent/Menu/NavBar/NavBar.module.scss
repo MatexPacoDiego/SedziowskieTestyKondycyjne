@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 10%;
+  border-radius: 15px;
+  backdrop-filter: blur(60px);
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  z-index: 23;
+}
+
+.menuBtn {
+  font-size: 0.7rem;
+  cursor: pointer;
+  background: #1d4ed8;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: "Poppins";
+  border: none;
+  font-weight: 600;
+  z-index: 100;
+  text-decoration: none;
+}
+.webLogo {
+  padding-top: 1rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.webLogo img {
+  width: 70%;
+}
+
+.menuSwitch {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 2%;
+}

@@ -1,0 +1,51 @@
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  color: white;
+  background-color: #32323278;
+  border-radius: 15px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.container h2 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.rules {
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 10px;
+  text-align: center;
+}
+
+.ruleParagraf {
+  background-color: #1d4ed8;
+  height: 4rem;
+  border-radius: 5px;
+  display: flex;
+  z-index: 21;
+  align-items: center;
+}
+
+.ruleParagraf p {
+  width: 90%;
+  margin: auto;
+}
+
+.blur {
+  position: absolute;
+  box-shadow: 60px -20px 100px 40px #1d4ed8;
+  z-index: 20;
+}
+
+.blurArea {
+  width: 100%;
+  text-align: right;
+}

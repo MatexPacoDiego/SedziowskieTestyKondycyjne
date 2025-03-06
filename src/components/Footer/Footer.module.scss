@@ -1,0 +1,98 @@
+.container {
+  background-color: #181818;
+  margin-top: 7rem;
+  width: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.webLogo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.webLogo img {
+  width: 60%;
+  margin-bottom: 0;
+}
+
+.webLogo h5 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.69);
+}
+
+.socials {
+  width: 80%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin: auto;
+}
+
+.socials img {
+  width: 60%;
+  transition: all 0.3s ease;
+}
+
+.socials a {
+  display: flex;
+  justify-content: center;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+.nav {
+  margin-top: 1rem;
+}
+
+.nav,
+.documents {
+  width: 80%;
+}
+
+.nav h6,
+.documents h6 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.69);
+}
+
+.nav ul,
+.documents ul {
+  list-style: none;
+}
+.nav li,
+.documents li {
+  margin-bottom: 0.8rem;
+}
+
+.nav a,
+.documents a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover,
+.documents a:hover {
+  color: #1d4ed8;
+}
+
+.copy {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.copy p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.581);
+}
