@@ -50,19 +50,16 @@
   text-align: right;
 }
 
-@media (min-width: 700px) {
-  .container {
-    width: 50%;
+
+@media (min-width: 900px) {
+  .rules {
+    font-size: 0.8rem;
   }
 }
 
-@media (min-width: 1400px) {
-  .container {
-    width: 30%;
-  }
-  .blur {
-    position: absolute;
-    box-shadow: 300px -20px 100px 40px #1d4ed8;
-    z-index: 20;
+@media (min-width: 1250px) {
+  .rules {
+    font-size: 0.9rem;
+
   }
 }

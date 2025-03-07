@@ -23,30 +23,34 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className={styles.nav}>
-          <h6>Nawigacja</h6>
-          <ul>
-            <li>
-              <a href="/#">Strona Główna</a>
-            </li>
-            <li>
-              <a href="/#description">Co Znajdziesz na stronie</a>
-            </li>
-            <li>
-              <a href="/#tests">Testy Kondycyjne</a>
-            </li>
-            <li>
-              <a href="/#footer">O nas</a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.documents}>
-          <h6>Dokumenty</h6>
-          <ul>
-            <li>
-              <a href="#">Polityka Prywatności</a>
-            </li>
-          </ul>
+
+        <div className={styles.docs}>
+          <div className={styles.nav}>
+            <h6>Nawigacja</h6>
+            <ul>
+              <li>
+                <a href="/#">Strona Główna</a>
+              </li>
+              <li>
+                <a href="/#description">Co Znajdziesz na stronie</a>
+              </li>
+              <li>
+                <a href="/#tests">Testy Kondycyjne</a>
+              </li>
+              <li>
+                <a href="/#footer">O nas</a>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.documents}>
+            <h6>Dokumenty</h6>
+            <ul>
+              <li>
+                <a href="#">Polityka Prywatności</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
       <div className={styles.copy}>

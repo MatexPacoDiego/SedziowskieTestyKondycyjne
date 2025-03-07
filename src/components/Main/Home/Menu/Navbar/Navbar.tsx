@@ -12,19 +12,14 @@ function Navbar({ onSwitchMenu }: NavbarProps) {
         <img src={logo} alt="logo" />
       </div>
 
-      <div className={styles.menu}>
-        <a href="/#">
-          <span>Strona Główna</span>
-        </a>
-        <a href="/#desktop">
-          <span>Co znajdziesz na stronie</span>
-        </a>
-        <a href="/#tests">
-          <span>Testy Kondycyjne</span>
-        </a>
-        <a href="/#footer">
-          <span>O Nas</span>
-        </a>
+      <div className={styles.nav}>
+        <div className={styles.menu}>
+          <a href="/#">Strona Główna</a>
+          <a href="/#resp">Co znajdziesz na stronie</a>
+          <a href="/#tests">Testy Kondycyjne</a>
+          <a href="/#footer">O Nas</a>
+        </div>
+
       </div>
 
       <div className={styles.menuSwitch}>

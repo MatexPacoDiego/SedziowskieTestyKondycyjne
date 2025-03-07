@@ -1,4 +1,5 @@
 import Navbar from "./Menu/NavBar/NavBar";
+import styles from "./RunTestContent.module.scss";
 import TestTimer from "./Main/TestTimer/TestTimer";
 import TestRules from "./Main/TestRules/TestRules";
 import ScrollToTop from "../../../ScrollToTop/ScrollToTop";
@@ -16,9 +17,12 @@ export default function RunTestContent({
   return (
     <>
       <ScrollToTop />
+
       <Navbar />
-      <TestTimer run={run} walk={walk} klas={klas} />
-      <TestRules run={run} walk={walk} />
+      <div className={styles.container}>
+        <TestTimer run={run} walk={walk} klas={klas} />
+        <TestRules run={run} walk={walk} />
+      </div>
     </>
   );
 }

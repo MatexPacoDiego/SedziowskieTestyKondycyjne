@@ -3,7 +3,7 @@
   top: 0;
   left: 5%;
   width: 90%;
-  height: 10%;
+  padding: 10px 0;
   border-radius: 15px;
   backdrop-filter: blur(60px);
   display: flex;
@@ -12,14 +12,27 @@
   z-index: 23;
 }
 
-.menu {
-  display: grid;
-  margin: auto;
-  text-align: center;
-  grid-template-columns: 2fr 2fr 2fr 1fr;
+.nav {
+  display: none;
+  width: 85%;
 }
 
-.menu a span::after {
+.menu {
+
+  display: flex;
+
+  gap: 20px;
+
+}
+
+.menu a {
+  color: white;
+
+  text-decoration: none;
+  position: relative;
+}
+
+.menu a::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -30,48 +43,55 @@
   transition: all 0.3s ease;
 }
 
-.menu a span:hover::after {
+.menu a:hover::after {
   width: 80%;
 }
 
-.menu a span {
-  position: relative;
-}
-
-.menu a {
+.menuBtn {
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
   color: white;
 
-  text-decoration: none;
-  font-size: 1rem;
-}
+  padding-right: 1rem;
+  border-radius: 5px;
 
-.menuBtn {
-  display: none;
+  border: none;
+  z-index: 100;
 }
 .webLogo {
-  width: 25%;
-  padding-top: 1rem;
+  width: 30%;
+  padding-left: 10px;
+
   display: flex;
   align-items: center;
 }
 .webLogo img {
-  width: 80%;
+
+  width: 100%;
 }
 
-@media (max-width: 1060px) {
-  .menuBtn {
-    font-size: 30px;
-    cursor: pointer;
-    background: transparent;
-    color: white;
-    padding-right: 1rem;
-    border-radius: 5px;
-    display: block;
-    border: none;
-    z-index: 100;
+.menuSwitch {
+  display: flex;
+  padding-right: 10px;
+  width: 70%;
+  display: block;
+  text-align: right;
+  align-items: center;
+}
+
+@media (min-width: 550px) {
+  .webLogo {
+    width: 20%;
   }
 
-  .menu {
+  .menuSwitch {
+    width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .menuSwitch {
+
     display: none;
   }
   .webLogo {
@@ -84,23 +104,30 @@
     width: 30%;
   }
 
-  .menuSwitch {
-    width: 20%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-right: 2%;
+
+  .webLogo {
+    width: 15%;
+  }
+
+  .nav {
+    display: block;
+    font-size: 1rem;
+    justify-items: right;
+  }
+
+  .menu {
+    justify-content: right;
+    padding-right: 20px;
   }
 }
 
-@media (max-width: 900px) {
-  .webLogo img {
-    width: 40%;
+@media (min-width: 1250px) {
+  .webLogo {
+    width: 10%;
   }
-}
 
-@media (min-width: 1600px) {
-  .webLogo img {
-    width: 50%;
+  .nav {
+    width: 90%;
+
   }
 }
