@@ -24,7 +24,9 @@ function Header({ isOpen }: HeaderProps) {
       </div>
       <div id="description" className={styles.image}>
         <img src={pitch} alt="boisko" />
+
         <span id="resp"></span>
+
       </div>
     </div>
   );

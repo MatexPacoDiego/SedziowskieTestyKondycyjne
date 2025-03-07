@@ -11,6 +11,7 @@ function Navbar({ onSwitchMenu }: NavbarProps) {
       <div className={styles.webLogo}>
         <img src={logo} alt="logo" />
       </div>
+
       <div className={styles.nav}>
         <div className={styles.menu}>
           <a href="/#">Strona Główna</a>
@@ -18,7 +19,9 @@ function Navbar({ onSwitchMenu }: NavbarProps) {
           <a href="/#tests">Testy Kondycyjne</a>
           <a href="/#footer">O Nas</a>
         </div>
+
       </div>
+
       <div className={styles.menuSwitch}>
         <button className={styles.menuBtn} onClick={onSwitchMenu}>
           ☰

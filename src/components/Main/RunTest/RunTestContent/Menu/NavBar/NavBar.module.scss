@@ -25,8 +25,10 @@
   z-index: 100;
 }
 .webLogo {
+
   width: 30%;
   padding-left: 10px;
+
   display: flex;
   align-items: center;
 }
@@ -35,6 +37,8 @@
 }
 
 .menuSwitch {
+
+
   display: flex;
   padding-right: 10px;
   width: 70%;
@@ -68,5 +72,23 @@
   }
   .menuSwitch {
     width: 90%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .webLogo img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .webLogo img {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .webLogo img {
+    width: 50%;
   }
 }

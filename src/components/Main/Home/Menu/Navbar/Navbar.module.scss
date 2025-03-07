@@ -18,13 +18,16 @@
 }
 
 .menu {
+
   display: flex;
 
   gap: 20px;
+
 }
 
 .menu a {
   color: white;
+
   text-decoration: none;
   position: relative;
 }
@@ -59,10 +62,12 @@
 .webLogo {
   width: 30%;
   padding-left: 10px;
+
   display: flex;
   align-items: center;
 }
 .webLogo img {
+
   width: 100%;
 }
 
@@ -86,8 +91,19 @@
 }
 @media (min-width: 900px) {
   .menuSwitch {
+
     display: none;
   }
+  .webLogo {
+    padding-top: 1rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .webLogo img {
+    width: 30%;
+  }
+
 
   .webLogo {
     width: 15%;
@@ -112,5 +128,6 @@
 
   .nav {
     width: 90%;
+
   }
 }

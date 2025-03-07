@@ -23,6 +23,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
+
         <div className={styles.docs}>
           <div className={styles.nav}>
             <h6>Nawigacja</h6>
@@ -49,6 +50,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
         </div>
       </div>
       <div className={styles.copy}>

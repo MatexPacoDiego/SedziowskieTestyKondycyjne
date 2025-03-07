@@ -125,3 +125,9 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+@media (min-width: 1600px) {
+  .boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
