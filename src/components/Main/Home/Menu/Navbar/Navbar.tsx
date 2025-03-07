@@ -13,10 +13,10 @@ function Navbar({ onSwitchMenu }: NavbarProps) {
       </div>
       <div className={styles.nav}>
         <div className={styles.menu}>
-          <a href="#">Strona Główna</a>
-          <a href="#">Co znajdziesz na stronie</a>
-          <a href="#">Testy Kondycyjne</a>
-          <a href="#">O Nas</a>
+          <a href="/#">Strona Główna</a>
+          <a href="/#resp">Co znajdziesz na stronie</a>
+          <a href="/#tests">Testy Kondycyjne</a>
+          <a href="/#footer">O Nas</a>
         </div>
       </div>
       <div className={styles.menuSwitch}>

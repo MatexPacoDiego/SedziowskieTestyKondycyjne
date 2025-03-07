@@ -54,3 +54,13 @@
   border: 2px solid #1d4fd86d;
   transform: scale(1.05);
 }
+
+@media (min-width: 900px) {
+  .boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .header {
+    font-size: 1.25rem;
+  }
+}

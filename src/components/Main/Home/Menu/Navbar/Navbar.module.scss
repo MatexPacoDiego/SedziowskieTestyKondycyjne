@@ -3,7 +3,7 @@
   top: 0;
   left: 5%;
   width: 90%;
-  height: 10%;
+  padding: 10px 0;
   border-radius: 15px;
   backdrop-filter: blur(60px);
   display: flex;
@@ -12,19 +12,36 @@
   z-index: 23;
 }
 
+.nav {
+  display: none;
+  width: 85%;
+}
+
 .menu {
   display: flex;
+
   gap: 20px;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  position: relative;
 }
 
-.menu a:hover {
-  color: #a855f7;
+.menu a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: #1d4ed8;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 80%;
 }
 
 .menuBtn {
@@ -32,36 +49,68 @@
   cursor: pointer;
   background: transparent;
   color: white;
+
   padding-right: 1rem;
   border-radius: 5px;
-  display: none;
+
   border: none;
   z-index: 100;
 }
 .webLogo {
-  padding-top: 1rem;
-  width: 80%;
+  width: 30%;
+  padding-left: 10px;
   display: flex;
   align-items: center;
 }
 .webLogo img {
-  width: 45%;
+  width: 100%;
 }
 
 .menuSwitch {
-  width: 20%;
   display: flex;
-  justify-content: end;
+  padding-right: 10px;
+  width: 70%;
+  display: block;
+  text-align: right;
   align-items: center;
-  padding-right: 2%;
 }
 
-@media (max-width: 900px) {
-  .menu {
+@media (min-width: 550px) {
+  .webLogo {
+    width: 20%;
+  }
+
+  .menuSwitch {
+    width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .menuSwitch {
     display: none;
   }
 
-  .menuBtn {
+  .webLogo {
+    width: 15%;
+  }
+
+  .nav {
     display: block;
+    font-size: 1rem;
+    justify-items: right;
+  }
+
+  .menu {
+    justify-content: right;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .webLogo {
+    width: 10%;
+  }
+
+  .nav {
+    width: 90%;
   }
 }
